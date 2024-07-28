@@ -42,7 +42,7 @@ fun DishDetailScreen(vm: DishViewModel, dishId: String) {
             Spacer(modifier = Modifier.height(16.dp))
             Text(dish.title, style = MaterialTheme.typography.headlineMedium, color = MaterialTheme.colorScheme.primary)
             Text(
-                text = "Serves: ${dish.portion}",
+                text = dish.portion,
                 style = MaterialTheme.typography.bodyLarge.copy(fontWeight = FontWeight.Bold, fontStyle = FontStyle.Italic, color = MaterialTheme.colorScheme.secondary)
             )
             Text(
